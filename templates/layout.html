@@ -19,8 +19,10 @@
 
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-            <li><a href="{{ url_for('FUN_root') }}">Home</a></li>
-            <li><a href="{{ url_for('FUN_public') }}">Public</a></li>
+            <li><a href="{{ url_for('FUN_root') }}">About</a></li>
+            <li><a href="{{ url_for('FUN_public') }}">Services</a></li>
+            <li>Products</li>
+            <li>Blog</li>
             {% if session.get("current_user", None) != None %}
 	       <li><a href="{{ url_for('FUN_private') }}">Private</a></li>
 	    {% endif%}
