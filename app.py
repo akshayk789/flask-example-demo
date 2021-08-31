@@ -42,9 +42,19 @@ def FUN_413(error):
 def FUN_root():
     return render_template("index.html")
 
-@app.route("/public/")
-def FUN_public():
+@app.route("/services/")
+def FUN_services():
     return render_template("public_page.html")
+
+
+@app.route("/products/")
+def FUN_products():
+    return render_template("products.html")
+
+
+@app.route("/blog/")
+def FUN_blog():
+    return render_template("blog.html")
 
 @app.route("/private/")
 def FUN_private():
